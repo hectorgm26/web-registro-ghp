@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio web de la empresa Wood Constructora">         <!--La metadescripción del sitio web, importante por describir contenido, y porque aparece en google abajo del link-->
+  <meta name="robots" content="index, follow">                                          <!--Indica a google si tiene que indexar página y seguir enlaces-->
+  <title>Empresa de Construcción Wood Constructora</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles2.css" >
+</head>
+
+<body>
+              <!-- NAV tomado de Bootstrap -->
+  <div class="container-fluid">
+        <header class="header">
+          <h2><strong><em>Wood Constructora</em></strong></h2>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Descúbrenos:</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index2.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Historia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+        <main class="contenido">
+            <h1><strong><em>Propósito y misión:</em></strong></h1>
+            <br>
+            <p>Bienvenidos a la página de Recursos Humanos de Wood Constructora, líderes en proyectos de construcción innovadores y sostenibles.</p>
+            <p>Desde nuestra fundación en 1997, hemos construido un equipo excepcional de profesionales apasionados en el bello y refinado arte de la construcción, compartiendo por más de 20 años nuestra visión de crear espacios funcionales y estéticamente cautivadores, pero a la vez sin perder ese toque de naturalidad que tanto hace falta en estos días.</p>
+            <p>Nuestro objetivo es atraer y retener el mejor talento de la industria, brindando un entorno laboral estimulante y oportunidades de crecimiento profesional.</p>
+            <p><em>Y por ello, si deseas formar parte de nuestro equipo, no dudes en registrarte en el formulario que encontrarás a la derecha de esta página. ¡Te esperamos!.</em></p>
+        </main>
+        <aside class="sidebar">
+            <h3><strong><em>Formulario de registro</em></strong></h3>
+            <div class="container">
+              <!-- Se agrega el novalidate, para que la propia página valide los campos, no el navegador -->
+                <!-- Tipo de formulario tomado de Bootstrap -->
+                  <form class="row mt-3 g-3 needs-validation" id="formulario" novalidate>
+                    <div class="col-md-6">
+                      <label for = "nameID" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="nameID" required>
+                      <div class="valid-feedback">
+                        Correcto!
+                      </div>
+                      <div class="invalid-feedback">
+                        Es necesario ingresar su nombre.
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <label for = "surnameID" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="surnameID" required>
+                      <div class="valid-feedback">
+                        Correcto!
+                      </div>
+                      <div class="invalid-feedback">
+                        Es necesario ingresar su apellido.
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <label for = "fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+                      <input type="date" class="form-control" id="fecha_nacimiento" required>
+                      <div class="valid-feedback">
+                        Correcto!
+                      </div>
+                      <div class="invalid-feedback">
+                        Es necesario ingresar la fecha de su nacimiento
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <label for = "correo" class="form-label">Correo electrónico</label>
+                      <input type="email" class="form-control" id="correo" required>
+                      <div class="valid-feedback">
+                        Correcto!
+                      </div>
+                      <div class="invalid-feedback">
+                        Es necesario ingresar su correo electrónico
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6 mt-5">
+                      <label for = "cargo" class="form-label">Cargo</label>
+                      <select id="cargo" name="cargo" required>
+                        <option value="">Seleccione un cargo</option>
+                        <option value="Ingeniero">Ingeniero</option>
+                        <option value="Obrero">Obrero</option>
+                        <option value="Supervisor">Supervisor</option>
+                        <option value="Vicepresidente Ejecutivo">Vicepresidente Ejecutivo</option>
+                        <option value="Jefe de terreno">Jefe de Terreno</option>
+                        <option value="Jefe O.T.">Jefe de oficina técnica</option>
+                        <option value="Asistente O.T.">Asistente de oficina técnica</option>
+                        <option value="Prevencionista">Prevencionista</option>
+                        <option value="Asistente Prevencionista">Asistente Prevencionista</option>
+                        <option value="Secretario Técnico">Secretario Técnico</option>
+                        <option value="Jefe RR.HH.">Jefe RR.HH.</option>
+                        <option value="Asistente RR.HH.">Asistente RR.HH</option>
+                        <option value="Topografo">Topografo</option>
+                        <option value="Alarife">Alarife</option>
+                        <option value="Supervisor de Terreno">Supervisor de Terreno</option>
+                        <option value="Supervisor de Montaje">Supervisor de montaje</option>
+                        <option value="Capataz">Capataz</option>
+                        <option value="Maestro Mayor">Maestro Mayor</option>
+                        <option value="Maestro Primera">Maestro Primera</option>
+                        <option value="Maestro Segunda">Maestro segunda</option>
+                        <option value="Bodeguero">Bodeguero</option>
+                        <option value="administrador de contrato">Administrador de contrato</option>
+                      </select>
+                      <div class="valid-feedback">
+                        Correcto!
+                      </div>
+                      <div class="invalid-feedback">
+                        Es necesario ingresar su cargo
+                      </div>
+                    </div>
+            
+                    <div class="col-md-6">
+                      <label for = "fecha-ingreso" class="form-label">Fecha de ingreso</label>
+                      <input type="date" class="form-control" id="ingreso" required>
+                      <div class="valid-feedback">
+                        Correcto!
+                      </div>
+                      <div class="invalid-feedback">
+                        Es necesario ingresar la fecha de ingreso
+                      </div>
+                    </div>
+            
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="terms" required>
+                        <label for="terms" class="form-check-label">Acepto ser registrado como usuario</label>
+                        <div class="valid-feedback">
+                          Correcto!
+                        </div>
+                        <div class="invalid-feedback">
+                          Es necesario aceptar los terminos y condiciones
+                        </div>
+                      </div>
+            
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrar</button>
+                    <input type="reset" value="Limpiar formulario">
+          
+
+                  </form>
+            </div>
+        </aside>
+
+        
+      <!-- Modal de confirmación tomado directo de Bootstrap -->
+  <div class="modal fade" id="modalRegistroExitoso" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalRegistroExitosoLabel">¡Registro Exitoso!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Tu registro ha sido exitoso.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                      <!-- Formato de columnas tomado directo de Bootstrap -->
+        <div class="user-grid">
+            <h4><strong><em>Usuarios registrados</em></strong></h4>
+            <div class="container text-center">
+              <div class="row row-cols-1 row-cols-md-4 g-4" id="user-grid-container">
+                <!-- Usuario 1 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 2 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 3 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 4 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Usuario 5 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 6 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 7 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 8 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- Usuario 9 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 10 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 11 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Usuario 12 -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title" id="respuesta-nombre">Nombre y apellido del Usuario</h5>
+                      <p class="card-text" id="respuesta-nacimiento">Fecha de nacimiento: </p>
+                      <p class="card-text" id="respuesta-correo">Correo: </p>
+                      <p class="card-text" id="respuesta-cargo">Cargo: </p>
+                      <p class="card-text" id="respuesta-fecha-ingreso">Fecha de ingreso: </p>
+                      <button class="btn btn-danger btn-remove">Eliminar</button>
+                    </div>
+                  </div>
+                </div>
+            
+              </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>Copyright © Todos los derechos reservados a Héctor Andrés González Mora.</p>
+        </footer>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+<script src="js/myscript.js"></script>
+</html>
